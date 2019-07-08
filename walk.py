@@ -2,7 +2,7 @@ import os
 import re
 
 
-def walk(dirname, pattern):
+def file_rename(dirname, pattern):
     """ gets a directory and a pattern to match
     and change the file names inside the directory """
     
@@ -17,4 +17,4 @@ def walk(dirname, pattern):
                 os.path.join(dirname, name),
                 os.path.join(dirname, name_slice.strip()))
 
-walk(r'J:\WEB\HTML, CSS, BS\150+ Section RRF', r'\d')
+file_rename(r'J:\WEB\HTML, CSS, BS\150+ Section RRF', r'\d')
